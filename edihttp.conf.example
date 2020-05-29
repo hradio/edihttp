@@ -1,0 +1,12 @@
+{
+  "afVersion": 1, //sets the EDI AF Version
+  "configVersion": 1.0, //only for internal use
+  "hosts": "localhost,192.168.0.14", //comma separated string for the hosts that should be dsiplayed at the overview page
+  "httpPort": 8187, //the port on which the streams are accessible
+  "maxGlobalSbt": 120, //global timshiftbuffer in minutes
+  "proxyPort": 443, //if you use a (reverse) proxy set its port here, otherwise set it to zero
+  "sbtChans": "21:120,0x0C:60,14,0x0D", //comma separated list of subchannel-ids that are available for timeshifting. Syntax of 21:120 or 0x15:120 means subchannel 21 with 120 minues of buffer. If the buffer parameter is ommited the 'maxGlobalSbt' value is used
+  "udpPort": 50006, //the UDP port on which the full ensemble is coming in
+  "verbose": false //stdout verbosity
+}
+
